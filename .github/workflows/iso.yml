@@ -23,7 +23,7 @@ jobs:
       - uses: osbuild/bootc-image-builder-action@main
         with:
           config-file: ./config.toml
-          image: ghcr.io/YOURUSER/my-atomic:latest
+          image: ghcr.io/hellbraker9/my-atomic:latest
           type: anaconda-iso
       - uses: actions/upload-artifact@v4
         with:
