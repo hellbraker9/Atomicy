@@ -25,7 +25,8 @@ jobs:
         with:
           config-file: ./config.toml
           image: ghcr.io/hellbraker9/my-atomic:latest
-          type: anaconda-iso
+          types: anaconda-iso
+          rootfs: ext4
       - uses: actions/upload-artifact@v4
         with:
           name: iso
