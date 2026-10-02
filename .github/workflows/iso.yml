@@ -18,6 +18,7 @@ jobs:
       - uses: docker/build-push-action@v6
         with:
           context: .
+          file: ./Containerfile
           push: true
           tags: ghcr.io/hellbraker9/my-atomic:latest
       - uses: osbuild/bootc-image-builder-action@main
